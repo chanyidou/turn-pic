@@ -37,6 +37,7 @@
 	width: 498px;
 	height: 228px;
 	opacity: 0.9;
+	border: 1px solid gray;
 }
 .wrapper .inside-w .zero img{
 	top: 100px;
