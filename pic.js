@@ -4,9 +4,7 @@ var oImgArr = [];
 		var page = 0;
 		var timer = null;
 		var key = true;
-		img.onload = function(){
-				console.log('success')		
-		}
+		
 		// 获取当前每个图片的位置与样式
 		var getArr = function(){
 			for (var i = 0; i < oImgLen ; i ++ ){
