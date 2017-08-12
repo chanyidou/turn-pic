@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>轮播</title>
+	<link rel="stylesheet" href="./pic.css">
+</head>
+<body>	
+	<ul class = 'out'>
+		<!-- <div class = 'outWrap' > -->
+			<div class = 'wrapper'>
+				<div class = 'slider'>
+					<li class = 'active'></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</div>
+				<button class = 'leftBtn' style = 'width:25px;height:80px;position: absolute;left: 40px; top: 126px;'>
+				</button>
+				<ul class = 'inside-w'>
+					<li class="zero pic">
+						<img  src="./img/0.jpg" alt="">
+					</li>
+					<li class = 'first pic'>
+						<img class = 'ileft' src="./img/1.jpg" alt="">
+					</li>
+					<li class = 'second pic bigger'>
+						<img class = 'imiddle' src="./img/2.jpg" alt="">
+					</li>
+					<li class = 'three pic'>
+						<img class = 'iright' src="./img/3.jpg" alt="">
+					</li>
+					<li class = 'four pic'>
+						<img src="./img/4.jpg" alt="">
+					</li>
+					<li class = 'five pic'>
+						<img src="./img/5.jpg" alt="">
+					</li>
+				</ul>
+				<button class = 'rightBtn' style = 'width:25px;height:80px;position: absolute; right: 40px; top: 126px;'>
+				</button>
+			</div>
+		<!-- </div> -->
+	</ul>
+	
+	<script src='./jquery-3.2.1.js'></script>
+	<script src='./jquery.easing.min.js'></script>
+	<script src="./pic.js"></script>
+</body>
+</html>
