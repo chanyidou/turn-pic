@@ -1,9 +1,30 @@
-var oImgArr = [];
+		var oImgArr = [];
 		var newImgArr;
+		var Img = $('img');
 		var oImgLen = $('img').length;
 		var page = 0;
 		var timer = null;
 		var key = true;
+		var urlArr = [
+			'https://518cosping.github.io/turn-pic/img/0.jpg',
+			'https://518cosping.github.io/turn-pic/img/1.jpg',
+			'https://518cosping.github.io/turn-pic/img/2.jpg',
+			'https://518cosping.github.io/turn-pic/img/3.jpg',
+			'https://518cosping.github.io/turn-pic/img/4.jpg',
+			'https://518cosping.github.io/turn-pic/img/5.jpg'	
+		];
+		var addImg = function(path){
+			img.onload = function(){
+				if(img.complete){
+					for(var i = 0; i < oImgLen; i ++){
+						img.eq(i).src = path;
+					}
+				}
+			}
+		}
+		for (var i = 0; i < oImgLen; i ++){
+			addImg(urlArr[i])
+		}
 		// 获取当前每个图片的位置与样式
 		var getArr = function(){
 			for (var i = 0; i < oImgLen ; i ++ ){
